@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="petal_width <= 0.8\ngini = 0.663\nsamples = 112\nvalue = [33, 37, 42]"] ;
+1 [label="gini = 0.0\nsamples = 33\nvalue = [33, 0, 0]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal_width <= 1.75\ngini = 0.498\nsamples = 79\nvalue = [0, 37, 42]"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="petal_length <= 4.95\ngini = 0.18\nsamples = 40\nvalue = [0, 36, 4]"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 34\nvalue = [0, 34, 0]"] ;
+3 -> 4 ;
+5 [label="petal_width <= 1.55\ngini = 0.444\nsamples = 6\nvalue = [0, 2, 4]"] ;
+3 -> 5 ;
+6 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 3]"] ;
+5 -> 6 ;
+7 [label="petal_length <= 5.45\ngini = 0.444\nsamples = 3\nvalue = [0, 2, 1]"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2, 0]"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]"] ;
+7 -> 9 ;
+10 [label="petal_length <= 4.85\ngini = 0.05\nsamples = 39\nvalue = [0, 1, 38]"] ;
+2 -> 10 ;
+11 [label="sepal_length <= 5.95\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 2]"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 2]"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 36\nvalue = [0, 0, 36]"] ;
+10 -> 14 ;
+}
